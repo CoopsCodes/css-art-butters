@@ -8,7 +8,7 @@ html {
 	box-sizing: inherit;
 }
 :root {
-	--bg: pink;
+	/* --bg: pink; */
 	--size: 80;
 	/*  Using viewport units  https://css-tricks.com/simple-little-use-case-vmin/ */
 	--unit: calc((var(--size) / 1063) * 1vmin);
@@ -27,13 +27,13 @@ body {
 
 img {
 	/* set the image to opacity to create a trace paper setup */
-	opacity: 0;
+	opacity: 0.5;
 }
 
 /* Butters intrinsic w 752 + h 1063 */
 /* Intrinsic height can be located in the image location of the dev tools */
 .butters {
-	background-color: hsla(0, 100%, 50%, 0.2);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
 }
 
 img,
@@ -47,9 +47,10 @@ img,
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	/* display: none; */
 }
 .face {
-	background-color: var(--skin);
+	/* background-color: var(--skin); */
 	height: 62.5%;
 	width: 88%;
 	position: absolute;
@@ -59,7 +60,7 @@ img,
 	border-radius: 51% 50% 50% 50%;
 }
 .butters__face--left-eye {
-	background-color: var(--eye-white);
+	/* background-color: var(--eye-white); */
 	height: 32.5%;
 	width: 28%;
 	position: absolute;
@@ -69,7 +70,7 @@ img,
 	/*             tl  tr  br  bl */
 }
 .butters__face--right-eye {
-	background-color: var(--eye-white);
+	/* background-color: var(--eye-white); */
 	height: 32.5%;
 	width: 28%;
 	position: absolute;
@@ -79,7 +80,7 @@ img,
 	/*             tl  tr  br  bl */
 }
 .butters__face--left-eyeball {
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	height: 3.6%;
 	width: 3.6%;
 	position: absolute;
@@ -88,7 +89,7 @@ img,
 	border-radius: 50%;
 }
 .butters__face--right-eyeball {
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	height: 3.6%;
 	width: 3.6%;
 	position: absolute;
@@ -98,7 +99,7 @@ img,
 }
 
 .butters__face--right-eyebrow {
-	border: 0.5px var(--black) solid;
+	/* border: 0.5px var(--black) solid; */
 	width: 20%;
 	position: absolute;
 	top: 38.7%;
@@ -106,7 +107,7 @@ img,
 	transform: rotate(139deg);
 }
 .butters__face--left-eyebrow {
-	border: 0.5px var(--black) solid;
+	/* border: 0.5px var(--black) solid; */
 	width: 20%;
 	position: absolute;
 	top: 38.9%;
@@ -114,14 +115,37 @@ img,
 	transform: rotate(39.5deg);
 }
 .butters__face--smile {
+	/* border: 0.5px var(--black) solid; */
 	border-radius: 50%;
-	border: 0.5px var(--black) solid;
 	height: 30%;
 	width: 30%;
 	position: absolute;
 	top: 55.7%;
 	left: 34.5%;
 	clip-path: inset(95% 0% 0% 0);
+}
+
+/* the container that holds all the hair */
+.butters__hair {
+	/* background-color: hsla(180, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 26.5%;
+	width: 72%;
+	left: 49%;
+	top: 1%;
+	transform: translate(-50%, 0);
+}
+
+.butters__hair--one {
+	background-color: var(--hair);
+	position: absolute;
+	height: 110%;
+	width: 100%;
+	top: 30%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+
+	clip-path: polygon(32% 23%, 46% 27%, 67% 43%, 43% 49%, 35% 26%);
 }
 
 /* to cut pieces to bits, use clip path */
@@ -131,14 +155,12 @@ img,
 /* border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%; */
 
 /* 			
-<div class="butters__face">
-	<div class="butters__face butters__face--left-eye"></div>
-	<div class="butters__face butters__face--right-eye"></div>
-	<div class="butters__face butters__face--left-eyeball"></div>
-	<div class="butters__face butters__face--right-eyeball"></div>
-
-	<div class="butters__face butters__face--left-eyebrow"></div>
-	<div class="butters__face butters__face--right-eyebrow"></div>
-
-	<div class="butters__face butters__face--smile"></div> 
+<div class="butters__hair">
+	<div class="butters__hair--one"></div>
+	<div class="butters__hair--two"></div>
+	<div class="butters__hair--three"></div>
+	<div class="butters__hair--four"></div>
+	<div class="butters__hair--five"></div>
+	<div class="butters__hair--six"></div>
+</div>
 */
