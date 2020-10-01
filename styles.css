@@ -12,6 +12,7 @@ html {
 	--size: 80;
 	/*  Using viewport units  https://css-tricks.com/simple-little-use-case-vmin/ */
 	--unit: calc((var(--size) / 1063) * 1vmin);
+	--skin: rgb(255, 221, 186);
 	--eye-white: rgb(255, 255, 255);
 	--hair: rgb(255, 255, 0);
 	--shirt: rgb(74, 222, 191);
@@ -26,7 +27,7 @@ body {
 
 img {
 	/* set the image to opacity to create a trace paper setup */
-	opacity: 0.4;
+	opacity: 0;
 }
 
 /* Butters intrinsic w 752 + h 1063 */
@@ -48,8 +49,7 @@ img,
 	transform: translate(-50%, -50%);
 }
 .face {
-	/* background-color: hsla(180, 100%, 50%, 0.2); */
-	background-color: rgb(255, 221, 186);
+	background-color: var(--skin);
 	height: 62.5%;
 	width: 88%;
 	position: absolute;
@@ -59,7 +59,6 @@ img,
 	border-radius: 51% 50% 50% 50%;
 }
 .butters__face--left-eye {
-	/* background-color: hsla(180, 100%, 50%, 0.3); */
 	background-color: var(--eye-white);
 	height: 32.5%;
 	width: 28%;
@@ -70,7 +69,6 @@ img,
 	/*             tl  tr  br  bl */
 }
 .butters__face--right-eye {
-	/* background-color: hsla(180, 100%, 50%, 0.3); */
 	background-color: var(--eye-white);
 	height: 32.5%;
 	width: 28%;
@@ -99,8 +97,35 @@ img,
 	border-radius: 50%;
 }
 
+.butters__face--right-eyebrow {
+	border: 0.5px var(--black) solid;
+	width: 20%;
+	position: absolute;
+	top: 38.7%;
+	left: 16.8%;
+	transform: rotate(139deg);
+}
+.butters__face--left-eyebrow {
+	border: 0.5px var(--black) solid;
+	width: 20%;
+	position: absolute;
+	top: 38.9%;
+	left: 64%;
+	transform: rotate(39.5deg);
+}
+.butters__face--smile {
+	border-radius: 50%;
+	border: 0.5px var(--black) solid;
+	height: 30%;
+	width: 30%;
+	position: absolute;
+	top: 55.7%;
+	left: 34.5%;
+	clip-path: inset(95% 0% 0% 0);
+}
+
 /* to cut pieces to bits, use clip path */
-/* clip-path: insert(0 0 0 0) */
+/* clip-path: inset(0 0 0 0) */
 
 /* for more refinement with boarder radius use the divide to get points in each corner rather than one */
 /* border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%; */
