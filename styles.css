@@ -1,0 +1,44 @@
+/* Universal Box Sizing w. Inheritance*/
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+:root {
+	--bg: pink;
+	--size: 50;
+	/*  Using viewport units  https://css-tricks.com/simple-little-use-case-vmin/ */
+	--unit: calc((var(--size) / 1063) * 1vmin);
+}
+
+body {
+	background-color: var(--bg);
+	min-height: 100vh;
+}
+
+img {
+	/* set the image to opacity to create a trace paper setup */
+	opacity: 0.5;
+}
+
+/* Butters intrinsic w 752 + h 1063 */
+/* Intrinsic height can be located in the image location of the dev tools */
+.butters {
+	background-color: hsla(0, 100%, 50%, 0.2);
+}
+
+img,
+.butters {
+	/* as the height and width of the image and drawing are the same they can be placed together */
+	height: calc(1063 * var(--unit));
+	width: calc(752 * var(--unit));
+
+	/* Aligning the image in the centre */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
