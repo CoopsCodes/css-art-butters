@@ -47,7 +47,6 @@ img,
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* display: none; */
 }
 .face {
 	/* background-color: var(--skin); */
@@ -137,7 +136,7 @@ img,
 }
 
 .butters__hair--one {
-	background-color: var(--hair);
+	/* background-color: var(--hair); */
 	position: absolute;
 	height: 110%;
 	width: 100%;
@@ -146,6 +145,73 @@ img,
 	transform: translate(-50%, -50%);
 
 	clip-path: polygon(32% 23%, 46% 27%, 67% 43%, 43% 49%, 35% 26%);
+}
+
+.butters__hair--two {
+	/* background-color: hsla(180, 100%, 50%, 0.2); */
+	/* background-color: var(--hair); */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 26.5%;
+	left: 41%;
+	transform: translate(-50%, -50%);
+
+	clip-path: polygon(89% 22%, 42% 51%, 82% 47%);
+}
+
+.butters__hair--three {
+	/* background-color: hsla(180, 100%, 50%, 0.2); */
+	/* background-color: var(--hair); */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 46.5%;
+	left: 51%;
+	transform: translate(-50%, -50%);
+
+	clip-path: polygon(72% 23%, 86% 34%, 101% 56%, 82% 46%, 26% 49%, 27% 29%);
+}
+
+.butters__hair--four {
+	/* background-color: hsla(180, 100%, 50%, 0.2); */
+	/* background-color: var(--hair); */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 71.5%;
+	left: 55.5%;
+	transform: translate(-50%, -50%);
+
+	clip-path: polygon(
+		76% 21%,
+		87% 48%,
+		93% 80%,
+		87% 69%,
+		65% 47%,
+		51% 37%,
+		21% 23%
+	);
+}
+.butters__hair--five {
+	/* background-color: hsla(180, 100%, 50%, 0.2); */
+	background-color: var(--hair);
+	position: absolute;
+	height: 101%;
+	width: 59%;
+	top: 83.5%;
+	left: 38.5%;
+	transform: translate(-50%, -50%);
+
+	clip-path: polygon(
+		83% 18%,
+		66% 35%,
+		45% 51%,
+		28% 60%,
+		20% 64%,
+		15% 66%,
+		38% 20%
+	);
 }
 
 /* to cut pieces to bits, use clip path */
