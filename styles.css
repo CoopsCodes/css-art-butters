@@ -26,7 +26,7 @@ body {
 
 img {
 	/* set the image to opacity to create a trace paper setup */
-	opacity: 1;
+	opacity: 0.4;
 }
 
 /* Butters intrinsic w 752 + h 1063 */
@@ -78,12 +78,32 @@ img,
 	top: 39%;
 	left: 49.5%;
 	border-radius: 55% 90% 55% 90%;
-	/* border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%; */
 	/*             tl  tr  br  bl */
+}
+.butters__face--left-eyeball {
+	background-color: var(--black);
+	height: 3.6%;
+	width: 3.6%;
+	position: absolute;
+	top: 54%;
+	left: 38.8%;
+	border-radius: 50%;
+}
+.butters__face--right-eyeball {
+	background-color: var(--black);
+	height: 3.6%;
+	width: 3.6%;
+	position: absolute;
+	top: 54%;
+	left: 55%;
+	border-radius: 50%;
 }
 
 /* to cut pieces to bits, use clip path */
 /* clip-path: insert(0 0 0 0) */
+
+/* for more refinement with boarder radius use the divide to get points in each corner rather than one */
+/* border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%; */
 
 /* 			
 <div class="butters__face">
