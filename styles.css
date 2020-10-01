@@ -9,9 +9,14 @@ html {
 }
 :root {
 	--bg: pink;
-	--size: 50;
+	--size: 80;
 	/*  Using viewport units  https://css-tricks.com/simple-little-use-case-vmin/ */
 	--unit: calc((var(--size) / 1063) * 1vmin);
+	--eye-white: rgb(255, 255, 255);
+	--hair: rgb(255, 255, 0);
+	--shirt: rgb(74, 222, 191);
+	--shorts: rgb(30, 95, 73);
+	--black: rgb(0, 0, 0);
 }
 
 body {
@@ -21,7 +26,7 @@ body {
 
 img {
 	/* set the image to opacity to create a trace paper setup */
-	opacity: 0.6;
+	opacity: 1;
 }
 
 /* Butters intrinsic w 752 + h 1063 */
@@ -43,15 +48,42 @@ img,
 	transform: translate(-50%, -50%);
 }
 .face {
-	background-color: hsla(180, 100%, 50%, 0.2);
+	/* background-color: hsla(180, 100%, 50%, 0.2); */
+	background-color: rgb(255, 221, 186);
 	height: 62.5%;
 	width: 88%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-48%, -66.5%);
-	border-radius: 50%;
+	transform: translate(-48.5%, -66%);
+	border-radius: 51% 50% 50% 50%;
 }
+.butters__face--left-eye {
+	/* background-color: hsla(180, 100%, 50%, 0.3); */
+	background-color: var(--eye-white);
+	height: 32.5%;
+	width: 28%;
+	position: absolute;
+	top: 39%;
+	left: 22%;
+	border-radius: 90% 55% 90% 55%;
+	/*             tl  tr  br  bl */
+}
+.butters__face--right-eye {
+	/* background-color: hsla(180, 100%, 50%, 0.3); */
+	background-color: var(--eye-white);
+	height: 32.5%;
+	width: 28%;
+	position: absolute;
+	top: 39%;
+	left: 49.5%;
+	border-radius: 55% 90% 55% 90%;
+	/* border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%; */
+	/*             tl  tr  br  bl */
+}
+
+/* to cut pieces to bits, use clip path */
+/* clip-path: insert(0 0 0 0) */
 
 /* 			
 <div class="butters__face">
