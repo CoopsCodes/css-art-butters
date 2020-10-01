@@ -21,7 +21,7 @@ body {
 
 img {
 	/* set the image to opacity to create a trace paper setup */
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 /* Butters intrinsic w 752 + h 1063 */
@@ -42,3 +42,26 @@ img,
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.face {
+	background-color: hsla(180, 100%, 50%, 0.2);
+	height: 62.5%;
+	width: 88%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-48%, -66.5%);
+	border-radius: 50%;
+}
+
+/* 			
+<div class="butters__face">
+	<div class="butters__face butters__face--left-eye"></div>
+	<div class="butters__face butters__face--right-eye"></div>
+	<div class="butters__face butters__face--left-eyeball"></div>
+	<div class="butters__face butters__face--right-eyeball"></div>
+
+	<div class="butters__face butters__face--left-eyebrow"></div>
+	<div class="butters__face butters__face--right-eyebrow"></div>
+
+	<div class="butters__face butters__face--smile"></div> 
+*/
