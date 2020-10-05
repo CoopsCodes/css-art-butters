@@ -8,7 +8,7 @@ html {
 	box-sizing: inherit;
 }
 :root {
-	--bg: rgb(253, 200, 209);
+	/* --bg: rgb(253, 200, 209); */
 	--size: 80;
 	/*  Using viewport units  https://css-tricks.com/simple-little-use-case-vmin/ */
 	--unit: calc((var(--size) / 1063) * 1vmin);
@@ -48,6 +48,7 @@ img,
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 .face {
 	background-color: var(--skin);
 	height: 62.5%;
@@ -95,7 +96,6 @@ img,
 	left: 55%;
 	border-radius: 50%;
 }
-
 .butters__face--right-eyebrow {
 	border: 0.5px var(--black) solid;
 	width: 20%;
@@ -123,7 +123,7 @@ img,
 	clip-path: inset(95% 0% 0% 0);
 }
 
-/* the container that holds all the hair */
+/* Hair container */
 .butters__hair {
 	position: absolute;
 	height: 26.5%;
@@ -132,7 +132,6 @@ img,
 	top: 1%;
 	transform: translate(-50%, 0);
 }
-
 .butters__hair--one {
 	background-color: var(--hair);
 	position: absolute;
@@ -144,7 +143,6 @@ img,
 
 	clip-path: polygon(32% 23%, 46% 27%, 67% 43%, 43% 49%, 35% 26%);
 }
-
 .butters__hair--two {
 	background-color: var(--hair);
 	position: absolute;
@@ -156,7 +154,6 @@ img,
 
 	clip-path: polygon(89% 22%, 42% 51%, 82% 47%);
 }
-
 .butters__hair--three {
 	background-color: var(--hair);
 	position: absolute;
@@ -168,7 +165,6 @@ img,
 
 	clip-path: polygon(72% 23%, 86% 34%, 101% 56%, 82% 46%, 26% 49%, 27% 29%);
 }
-
 .butters__hair--four {
 	background-color: var(--hair);
 	position: absolute;
@@ -227,9 +223,8 @@ img,
 	);
 }
 
-/* Hands */
+/* Hands container */
 .butters__hands {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 10.5%;
 	width: 77.5%;
@@ -238,7 +233,7 @@ img,
 	transform: translate(-50%, -50%);
 }
 .butter__hands--left-hand {
-	/* background-color: var(--skin); */
+	background-color: var(--skin);
 	position: absolute;
 	height: 84.5%;
 	width: 17.5%;
@@ -248,8 +243,8 @@ img,
 	border-radius: 50% 50%;
 }
 .butter__hands--left-thumb {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
-	/* background-color: var(--skin); */
+	background-color: var(--skin);
+	border: solid 1px var(--black);
 	position: absolute;
 	height: 47%;
 	width: 9%;
@@ -257,11 +252,9 @@ img,
 	left: 15%;
 	transform: translate(-50%, -50%);
 	border-radius: 50% 50%;
-	/* border: solid 1px var(--black); */
 }
 .butter__hands--right-hand {
-	/* background-color: var(--skin); */
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--skin);
 	position: absolute;
 	height: 84.5%;
 	width: 17.5%;
@@ -271,8 +264,8 @@ img,
 	border-radius: 50% 50%;
 }
 .butter__hands--right-thumb {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
-	/* background-color: var(--skin); */
+	background-color: var(--skin);
+	border: solid 1px var(--black);
 	position: absolute;
 	height: 47%;
 	width: 9%;
@@ -280,10 +273,127 @@ img,
 	left: 86%;
 	transform: translate(-50%, -50%);
 	border-radius: 50% 50%;
-	/* border: solid 1px var(--black); */
+}
+
+.butters__torso {
+	position: absolute;
+	height: 30%;
+	width: 77%;
+	top: 79%;
+	left: 51%;
+	transform: translate(-50%, -50%);
+}
+.butters__torso--shirt-bottom {
+	background-color: var(--shirt);
+	position: absolute;
+	height: 30%;
+	width: 83%;
+	top: 85.4%;
+	left: 51.5%;
+	transform: translate(-50%, -50%);
+	border-radius: 50% 50%;
+}
+.butters__torso--shirt-middle-square {
+	background-color: var(--shirt);
+	position: absolute;
+	height: 99%;
+	width: 70%;
+	top: 39.4%;
+	left: 50.5%;
+	transform: translate(-50%, -50%);
+}
+.butters__torso--shirt-left-arm {
+	background-color: var(--shirt);
+	height: 115.5%;
+	width: 28%;
+	position: absolute;
+	top: -5%;
+	left: 2%;
+	border-radius: 151% 55% 94% 55%;
+	clip-path: inset(0% 0 25% 0);
+	/*             tl  tr  br  bl */
+}
+.butters__torso--shirt-left-arm-two {
+	background-color: var(--shirt);
+	height: 50%;
+	width: 12%;
+	position: absolute;
+	top: 30%;
+	left: 2%;
+	transform: rotate(16deg);
+	clip-path: inset(12% 0 10% 0);
+	border-radius: 0% 0% 0% 50%;
+}
+.butters__torso--shirt-right-arm {
+	background-color: var(--shirt);
+	height: 82%;
+	width: 17%;
+	position: absolute;
+	top: -3%;
+	left: 79%;
+	transform: rotate(159deg);
+
+	border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%;
+}
+.butters__torso--shirt-right-arm-two {
+	background-color: var(--shirt);
+	height: 37%;
+	width: 29%;
+	position: absolute;
+	top: 11%;
+	left: 68.5%;
+	transform: rotate(62deg);
+	clip-path: inset(0% 31% 0% 0%);
+}
+.butters__torso--under-arm-left-line-one {
+	border: 1px var(--black) solid;
+	width: 11%;
+	position: absolute;
+	top: 60.7%;
+	left: 8.9%;
+	transform: rotate(105deg);
+}
+.butters__torso--under-arm-left-line-two {
+	border: 1px var(--black) solid;
+	width: 6.1%;
+	position: absolute;
+	top: 46.4%;
+	left: 14.3%;
+	transform: rotate(120deg);
+}
+.butters__torso--under-arm-right-line-one {
+	border: 1px var(--black) solid;
+	width: 12%;
+	position: absolute;
+	top: 63.7%;
+	left: 80.5%;
+	transform: rotate(74deg);
+}
+.butters__torso--under-arm-right-line-two {
+	border: 1px var(--black) solid;
+	width: 6.4%;
+	position: absolute;
+	top: 48.4%;
+	left: 80.3%;
+	transform: rotate(63deg);
+}
+.butters__torso--middle-line {
+	border: 1px var(--black) solid;
+	height: 76%;
+	position: absolute;
+	top: 23%;
+	left: 50%;
 }
 /* to cut pieces to bits, use clip path */
 /* clip-path: inset(0 0 0 0) */
 
 /* for more refinement with boarder radius use the divide to get points in each corner rather than one */
 /* border-radius: 55% 60% 45% 70% / 40% 60% 45% 70%; */
+
+/* to create the trace background colour */
+/* background-color: hsla(0, 100%, 50%, 0.2); */
+/* 
+<div class="butters__torso--under-arm-right-line-one"></div>
+<div class="butters__torso--under-arm-right-line-two"></div> 
+<div class="butters__torso--middle-line"></div> 
+*/
