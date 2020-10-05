@@ -384,6 +384,15 @@ img,
 	top: 23%;
 	left: 50%;
 }
+.butters__legs {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--shorts);
+	height: 10%;
+	width: 60%;
+	position: absolute;
+	top: 88.7%;
+	left: 21.5%;
+}
 /* to cut pieces to bits, use clip path */
 /* clip-path: inset(0 0 0 0) */
 
