@@ -27,7 +27,7 @@ body {
 
 img {
 	/* set the image to opacity to create a trace paper setup */
-	opacity: 0;
+	opacity: 0.5;
 }
 
 /* Butters intrinsic w 752 + h 1063 */
@@ -36,7 +36,7 @@ img {
 	/* background-color: hsla(0, 100%, 50%, 0.2); */
 }
 
-/* img, */
+img,
 .butters {
 	/* as the height and width of the image and drawing are the same they can be placed together */
 	height: calc(1063 * var(--unit));
@@ -227,6 +227,61 @@ img {
 	);
 }
 
+/* Hands */
+.butters__hands {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 10.5%;
+	width: 77.5%;
+	top: 87%;
+	left: 50.5%;
+	transform: translate(-50%, -50%);
+}
+.butter__hands--left-hand {
+	/* background-color: var(--skin); */
+	position: absolute;
+	height: 84.5%;
+	width: 17.5%;
+	top: 45%;
+	left: 9%;
+	transform: translate(-50%, -50%);
+	border-radius: 50% 50%;
+}
+.butter__hands--left-thumb {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	/* background-color: var(--skin); */
+	position: absolute;
+	height: 47%;
+	width: 9%;
+	top: 35%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	border-radius: 50% 50%;
+	/* border: solid 1px var(--black); */
+}
+.butter__hands--right-hand {
+	/* background-color: var(--skin); */
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 84.5%;
+	width: 17.5%;
+	top: 50%;
+	left: 91.5%;
+	transform: translate(-50%, -50%);
+	border-radius: 50% 50%;
+}
+.butter__hands--right-thumb {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	/* background-color: var(--skin); */
+	position: absolute;
+	height: 47%;
+	width: 9%;
+	top: 35%;
+	left: 86%;
+	transform: translate(-50%, -50%);
+	border-radius: 50% 50%;
+	/* border: solid 1px var(--black); */
+}
 /* to cut pieces to bits, use clip path */
 /* clip-path: inset(0 0 0 0) */
 
