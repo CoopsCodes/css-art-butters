@@ -8,7 +8,7 @@ html {
 	box-sizing: inherit;
 }
 :root {
-	/* --bg: rgb(253, 200, 209); */
+	--bg: rgb(253, 200, 209);
 	--size: 80;
 	/*  Using viewport units  https://css-tricks.com/simple-little-use-case-vmin/ */
 	--unit: calc((var(--size) / 1063) * 1vmin);
@@ -23,20 +23,20 @@ html {
 body {
 	background-color: var(--bg);
 	min-height: 100vh;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5rem;
+	overflow: hidden;
 }
 
-img {
-	/* set the image to opacity to create a trace paper setup */
-	opacity: 0.5;
+.about {
+	position: fixed;
+	right: 5%;
 }
 
-/* Butters intrinsic w 752 + h 1063 */
+/* Butters intrinsic values => w 752 + h 1063 */
 /* Intrinsic height can be located in the image location of the dev tools */
-.butters {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
-}
 
-img,
+/* Whole container */
 .butters {
 	/* as the height and width of the image and drawing are the same they can be placed together */
 	height: calc(1063 * var(--unit));
@@ -49,6 +49,7 @@ img,
 	transform: translate(-50%, -50%);
 }
 
+/* Face Container */
 .face {
 	background-color: var(--skin);
 	height: 62.5%;
@@ -59,6 +60,7 @@ img,
 	transform: translate(-48.5%, -66%);
 	border-radius: 51% 50% 50% 50%;
 }
+/* Face Parts */
 .butters__face--left-eye {
 	background-color: var(--eye-white);
 	height: 32.5%;
@@ -123,7 +125,7 @@ img,
 	clip-path: inset(95% 0% 0% 0);
 }
 
-/* Hair container */
+/* Hair Container */
 .butters__hair {
 	position: absolute;
 	height: 26.5%;
@@ -132,6 +134,7 @@ img,
 	top: 1%;
 	transform: translate(-50%, 0);
 }
+/* Hair Parts */
 .butters__hair--one {
 	background-color: var(--hair);
 	position: absolute;
@@ -223,7 +226,7 @@ img,
 	);
 }
 
-/* Hands container */
+/* Hands Container */
 .butters__hands {
 	position: absolute;
 	height: 10.5%;
@@ -232,6 +235,7 @@ img,
 	left: 50.5%;
 	transform: translate(-50%, -50%);
 }
+/* Hands Parts */
 .butter__hands--left-hand {
 	background-color: var(--skin);
 	position: absolute;
@@ -274,7 +278,6 @@ img,
 	transform: translate(-50%, -50%);
 	border-radius: 50% 50%;
 }
-
 .butters__torso {
 	position: absolute;
 	height: 30%;
@@ -373,8 +376,8 @@ img,
 	width: 6.4%;
 	position: absolute;
 	top: 48.4%;
-	left: 80.3%;
-	transform: rotate(63deg);
+	left: 80%;
+	transform: rotate(60deg);
 }
 .butters__torso--middle-line {
 	border: 1px var(--black) solid;
@@ -384,6 +387,7 @@ img,
 	left: 50%;
 }
 
+/* Legs Container (one part) */
 .butters__legs {
 	background-color: var(--shorts);
 	height: 10%;
@@ -393,6 +397,7 @@ img,
 	left: 21.5%;
 }
 
+/* Feet Container */
 .butters__feet {
 	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
@@ -402,6 +407,7 @@ img,
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+/* Feet Parts */
 .butters__feet-left {
 	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background-color: var(--black);
