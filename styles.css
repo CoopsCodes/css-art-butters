@@ -311,7 +311,6 @@ img,
 	left: 2%;
 	border-radius: 151% 55% 94% 55%;
 	clip-path: inset(0% 0 25% 0);
-	/*             tl  tr  br  bl */
 }
 .butters__torso--shirt-left-arm-two {
 	background-color: var(--shirt);
@@ -384,8 +383,8 @@ img,
 	top: 23%;
 	left: 50%;
 }
+
 .butters__legs {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background-color: var(--shorts);
 	height: 10%;
 	width: 60%;
@@ -393,6 +392,39 @@ img,
 	top: 88.7%;
 	left: 21.5%;
 }
+
+.butters__feet {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 3%;
+	width: 69%;
+	top: 98%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.butters__feet-left {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--black);
+	position: absolute;
+	height: 295%;
+	width: 61%;
+	top: 13%;
+	left: -3%;
+	border-radius: 50% 50%;
+	clip-path: inset(0% 0% 74% 0%);
+}
+.butters__feet-right {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--black);
+	position: absolute;
+	height: 295%;
+	width: 61%;
+	top: 13%;
+	left: 41%;
+	border-radius: 50% 50%;
+	clip-path: inset(0% 0% 74% 0%);
+}
+
 /* to cut pieces to bits, use clip path */
 /* clip-path: inset(0 0 0 0) */
 
@@ -401,8 +433,3 @@ img,
 
 /* to create the trace background colour */
 /* background-color: hsla(0, 100%, 50%, 0.2); */
-/* 
-<div class="butters__torso--under-arm-right-line-one"></div>
-<div class="butters__torso--under-arm-right-line-two"></div> 
-<div class="butters__torso--middle-line"></div> 
-*/
