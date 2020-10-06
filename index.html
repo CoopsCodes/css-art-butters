@@ -8,6 +8,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
 		<title>Butter's</title>
 	</head>
 	<body>
@@ -55,5 +56,22 @@
 			</div>
 		</div>
 		<div class="about">CSS Art by Cooper</div>
+
+		<!-- <button id="rgbButton">Change my clothes</button> -->
+		<div id="rgb" class="rgb">
+			<select name="article" id="item-select">
+				<option value="">Select an item to change</option>
+				<option value="hair">Hair</option>
+				<option value="shirt">Shirt</option>
+				<option value="pants">Pants</option>
+				<option value="shoes">Shoes</option>
+				<option value="background">Background</option>
+			</select>
+			<div class="spectrum-wrapper">
+				<div class="spectrum-layer"></div>
+				<div class="saturation-white"></div>
+				<div class="saturation-black"></div>
+			</div>
+		</div>
 	</body>
 </html>
