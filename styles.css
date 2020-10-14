@@ -29,8 +29,10 @@ body {
 }
 
 .about {
-	position: fixed;
-	right: 5%;
+	position: absolute;
+	top: 14%;
+	right: -19%;
+	transform: rotate(90deg);
 }
 
 /* Butters intrinsic values => w 752 + h 1063 */
@@ -444,12 +446,33 @@ body {
 .rgb {
 	display: none;
 }
+.fabuliser-container {
+	width: 400px;
+	display: flex;
+}
+#item-select {
+	width: 210px;
+	height: 40px;
+	border: none;
+	background-color: black;
+	color: white;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1rem;
+}
+.rgbButton {
+	width: 100px;
+	height: 40px;
+	border: none;
+	background-color: black;
+	color: white;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1rem;
+}
 .spectrum-wrapper {
 	position: absolute;
 	cursor: crosshair;
-	bottom: 189px;
-	left: -115px;
-	transform: rotate(90deg);
+	bottom: 1%;
+	left: 1%;
 	width: 360px;
 	height: 120px;
 	user-select: none;

@@ -13,66 +13,93 @@
 	</head>
 	<body>
 		<div class="butters">
-			<div class="butters__legs"></div>
+			<div id="pants" class="butters__legs"></div>
 			<div class="butters__feet">
-				<div class="butters__feet-left"></div>
-				<div class="butters__feet-right"></div>
+				<div id="feet" class="butters__feet-left"></div>
+				<div id="feet" class="butters__feet-right"></div>
 			</div>
 			<div class="butters__torso">
-				<div class="butters__torso--shirt-bottom"></div>
-				<div class="butters__torso--shirt-middle-square"></div>
-				<div class="butters__torso--shirt-left-arm"></div>
-				<div class="butters__torso--shirt-right-arm"></div>
-				<div class="butters__torso--shirt-left-arm-two"></div>
-				<div class="butters__torso--shirt-right-arm-two"></div>
+				<div id="shirt" class="butters__torso--shirt-bottom"></div>
+				<div
+					id="shirt"
+					class="butters__torso--shirt-middle-square"
+				></div>
+				<div id="shirt" class="butters__torso--shirt-left-arm"></div>
+				<div id="shirt" class="butters__torso--shirt-right-arm"></div>
+				<div
+					id="shirt"
+					class="butters__torso--shirt-left-arm-two"
+				></div>
+				<div
+					id="shirt"
+					class="butters__torso--shirt-right-arm-two"
+				></div>
 				<div class="butters__torso--under-arm-left-line-one"></div>
 				<div class="butters__torso--under-arm-left-line-two"></div>
 				<div class="butters__torso--under-arm-right-line-one"></div>
 				<div class="butters__torso--under-arm-right-line-two"></div>
 				<div class="butters__torso--middle-line"></div>
 			</div>
-			<div class="butters__face face">
+			<div id="skin" class="butters__face face">
 				<div class="butters__face butters__face--left-eye"></div>
 				<div class="butters__face butters__face--right-eye"></div>
 				<div class="butters__face butters__face--left-eyeball"></div>
 				<div class="butters__face butters__face--right-eyeball"></div>
 				<div class="butters__face butters__face--left-eyebrow"></div>
 				<div class="butters__face butters__face--right-eyebrow"></div>
-				<div class="butters__face butters__face--smile"></div>
+				<div id="skin" class="butters__face butters__face--smile"></div>
 			</div>
 			<div class="butters__hands hands">
-				<div class="butter__hands butter__hands--left-hand"></div>
-				<div class="butter__hands butter__hands--left-thumb"></div>
-				<div class="butter__hands butter__hands--right-hand"></div>
-				<div class="butter__hands butter__hands--right-thumb"></div>
+				<div
+					id="skin"
+					class="butter__hands butter__hands--left-hand"
+				></div>
+				<div
+					id="skin"
+					class="butter__hands butter__hands--left-thumb"
+				></div>
+				<div
+					id="skin"
+					class="butter__hands butter__hands--right-hand"
+				></div>
+				<div
+					id="skin"
+					class="butter__hands butter__hands--right-thumb"
+				></div>
 			</div>
 			<div class="butters__hair">
-				<div class="butters__hair--one"></div>
-				<div class="butters__hair--two"></div>
-				<div class="butters__hair--three"></div>
-				<div class="butters__hair--four"></div>
-				<div class="butters__hair--five"></div>
-				<div class="butters__hair--six"></div>
+				<div id="hairs" class="butters__hair--one"></div>
+				<div id="hairs" class="butters__hair--two"></div>
+				<div id="hairs" class="butters__hair--three"></div>
+				<div id="hairs" class="butters__hair--four"></div>
+				<div id="hairs" class="butters__hair--five"></div>
+				<div id="hairs" class="butters__hair--six"></div>
 			</div>
 		</div>
 		<div class="about">CSS Art by Cooper</div>
 
-		<!-- <button id="rgbButton">Fabuliser</button> -->
-		<div id="rgb" class="rgb">
-			<select name="item-select" id="item-select">
-				<option value="">Select an item to change</option>
-				<option value="hair">Hair</option>
-				<option value="shirt">Shirt</option>
-				<option value="pants">Pants</option>
-				<option value="shoes">Shoes</option>
-				<option value="background">Background</option>
-			</select>
-			<div class="spectrum-wrapper">
-				<div class="spectrum-layer"></div>
-				<div class="saturation-white"></div>
-				<div class="saturation-black"></div>
+		<div class="fabuliser-container">
+			<button class="rgbButton" id="rgbButton">Fabuliser</button>
+			<div id="rgb" class="rgb">
+				<select name="item-select" id="item-select">
+					<option id="item-select" value="">
+						Select an item to fabulise
+					</option>
+					<option id="item-select" value="skin">Skin</option>
+					<option id="item-select" value="hair">Hair</option>
+					<option id="item-select" value="shirt">Shirt</option>
+					<option id="item-select" value="pants">Pants</option>
+					<option id="item-select" value="shoes">Shoes</option>
+					<option id="item-select" value="background">
+						Background
+					</option>
+				</select>
+				<div id="spectrum-wrapper" class="spectrum-wrapper">
+					<div id="spectrum-wrapper" class="spectrum-layer"></div>
+					<div id="spectrum-wrapper" class="saturation-white"></div>
+					<div id="spectrum-wrapper" class="saturation-black"></div>
+				</div>
 			</div>
 		</div>
-		<div id="selectedItem"></div>
 	</body>
 </html>
