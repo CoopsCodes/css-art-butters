@@ -78,31 +78,16 @@ const saturate = (rgb, e) => {
 	return rgb;
 };
 
-const rgbToHex = (r, g, b) => {
-	const toHex = (rgb) => {
-		let hex = Number(rgb).toString(16);
-		if (hex.length < 2) {
-			hex = `0${hex}`;
-		}
-		return hex;
-	};
-	const red = toHex(r);
-	const green = toHex(g);
-	const blue = toHex(b);
-	return `#${red}${green}${blue}`;
-};
-
 document.addEventListener(
 	"click",
 	function (e) {
 		// If the clicked element doesn't have the right selector, bail
+		e.preventDefault();
+
 		if (!e.target.matches("#spectrum-wrapper")) return;
 
 		const rgb = findRgbFromMousePosition(e);
 		const { r, g, b } = saturate(rgb, e);
-		const hexValue = rgbToHex(r, g, b);
-
-		e.preventDefault();
 
 		if (articleSelector.value == "skin") {
 			changeSkin(r, g, b);
