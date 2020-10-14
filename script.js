@@ -1,6 +1,7 @@
 const showButton = document.getElementById("rgbButton");
 const rgbSelector = document.getElementById("rgb");
 const articleSelector = document.getElementById("item-select");
+const about = document.getElementById("about");
 const getSpectrumWrapper = () => document.querySelector(".spectrum-wrapper");
 
 // Clothing element selectors to change image colours
@@ -14,8 +15,10 @@ const feet = document.querySelectorAll("#feet");
 showButton.addEventListener("click", () => {
 	if (rgbSelector.style.display == "block") {
 		rgbSelector.style.display = "none";
+		about.style.display = "block";
 	} else {
 		rgbSelector.style.display = "block";
+		about.style.display = "none";
 	}
 });
 

@@ -30,9 +30,9 @@ body {
 
 .about {
 	position: absolute;
-	top: 14%;
-	right: -19%;
-	transform: rotate(90deg);
+	top: 0px;
+	right: 5px;
+	/* transform: rotate(90deg); */
 }
 
 /* Butters intrinsic values => w 752 + h 1063 */
